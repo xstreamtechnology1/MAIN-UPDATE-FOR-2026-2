@@ -1,0 +1,226 @@
+/* General styling for gallery */
+#worship-gallery {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+}
+
+#worship-gallery h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FFD700;
+    padding: top 50px;
+    
+    
+}
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-style: solid;
+    border-color: #FFD700;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* keep hidden by default; alignment below will take effect when shown */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.prev-btn {
+    left: 30px;
+}
+
+.next-btn {
+    right: 30px;
+}
+
+.zoom-controls {
+    position: absolute;
+    top: 10px;
+    right: 50px; /* Adjust distance from the close button */
+    display: flex;
+    gap: 5px;
+}
+
+.zoom-controls button {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-controls button:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Position zoom buttons on the top-right, below the close button */
+.zoom-btn {
+    position: absolute;
+    top: 20px; /* Align below the close button */
+    right: 60px; /* Place them to the left of the X button */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px; /* Small space between buttons */
+}
+
+/* Zoom In Button */
+#zoom-in {
+    margin-bottom: 5px; /* Stack above zoom-out */
+}
+
+/* Zoom Out Button */
+#zoom-out {
+    margin-top: 40px; /* Below the zoom-in button */
+}
+
+/* Icon styling */
+.zoom-icon {
+    font-size: 1.5rem;
+    display: inline-flex;
+}
+
+/* Hover effect for buttons */
+.zoom-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Default modal styles for larger screens */
+.modal-content {
+    max-width: 80%; /* Limits the width to 80% of the screen */
+    max-height: 80%; /* Limits the height to 80% of the screen */
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease;
+}
+
+
+/* Adjust modal size for smaller screens */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 90%; /* Reduce width for smaller screens */
+        max-height: 70%; /* Reduce height for smaller screens */
+    }
+
+    .modal {
+        padding: 10px; /* Add some padding to avoid edge collisions */
+        width: 100%;
+       
+    }
+
+    .close-btn, .zoom-btn {
+        font-size: 1.2rem; /* Adjust button size for smaller screens */
+        top:280px;
+        position: absolute;
+        z-index: 10;
+    }
+
+
+    .close-btn{
+        font-size: 1rem; /* Adjust button size for smaller screens */
+        top:200px;
+        font-size:1000px;
+    }
+
+    .zoom-btn {
+        padding: 8px; /* Reduce padding for zoom buttons */
+        position: absolute;
+        top: 300px; /* Align below the close button */
+        right: 60px; /* Place them to the left of the X button */
+       
+        
+    }
+}
+
+/* Adjust modal for very small screens (mobile) */
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 95%; /* Further reduce the width */
+        max-height: 60%; /* Further reduce the height */
+    }
+
+    .close-btn, .zoom-btn {
+        font-size: 1rem; /* Smaller buttons */
+        padding: 5px;
+    }
+
+    .zoom-btn {
+        right: 40px; /* Adjust position for smaller screens */
+    }
+}
+
+

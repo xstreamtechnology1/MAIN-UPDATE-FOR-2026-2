@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    
+    margin-bottom: 2px;;
+}
+
+/* Donate Page Section */
+#donate-page {
+    padding: 50px 20px;
+}
+
+#donate-page h1 {
+    font-size: 2.5rem;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+#donate-page p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Account Details Section */
+.account-details {
+    margin: 20px auto;
+    background-color: #ffff;
+    color: #3f4347;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.account-details h2 {
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.account-details p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    background-color: yellow;
+    color: #003366;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #ffc107;
+}

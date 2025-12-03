@@ -1,0 +1,23 @@
+#church-location {
+    padding: 50px 20px;
+    background-color: #003366; /* Light blue matching your brand colors */
+    text-align: center;
+   
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .map-heading {
+    font-size: 2rem;
+    color: #FFD700; /* Your dark blue brand color */
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid #003366; /* Add a border with brand color */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  

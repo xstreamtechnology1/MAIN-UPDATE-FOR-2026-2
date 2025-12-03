@@ -1,0 +1,70 @@
+/* General Section Styling */
+#church-branches {
+    padding: 40px 20px;
+    background-color: #003366;
+    text-align: center;
+    margin-top:5px;
+}
+
+#church-branches h2 {
+    font-size: 28px;
+    color: #FFD700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Branch Styling */
+.branch {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #FFD700;
+    border: 1px solid ;
+    border-radius: 8px;
+    border-width: 3px;
+    background-color: #003366;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.branch img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.branch-info {
+    text-align: left;
+}
+
+.branch-info h3 {
+    font-size: 20px;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.branch-info p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .branch {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .branch img {
+        margin-bottom: 15px;
+    }
+
+    .branch-info {
+        text-align: center;
+    }
+}

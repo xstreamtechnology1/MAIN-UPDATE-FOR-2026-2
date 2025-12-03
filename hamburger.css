@@ -1,0 +1,45 @@
+/* Ensure the navbar items are displayed in a row by default */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+}
+
+/* Hide the links on smaller screens */
+nav ul.active {
+    display: block;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+    position: absolute; /* Fix the position of the hamburger */
+    top: 212px; /* Adjust vertical position as needed */
+    right: 330px; /* Adjust horizontal position as needed */
+    
+   
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    
+}
+
+/* Show hamburger icon on small screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hidden by default on small screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+}

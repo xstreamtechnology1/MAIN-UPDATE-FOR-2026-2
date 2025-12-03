@@ -1,0 +1,66 @@
+/* General Section Styling */
+#events-section {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+#events-section h2 {
+    color: yellow;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Event Card Container */
+.event-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Event Card */
+.event-card {
+    background-color: white;
+    color: #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Image Styling */
+.event-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Event Title */
+.event-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Event Details */
+.event-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action Button */
+.event-card a {
+    text-decoration: none;
+    background-color: yellow;
+    color: #003366;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}

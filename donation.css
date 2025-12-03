@@ -1,0 +1,61 @@
+/* Donation Section Styling */
+#donation-section {
+    background-color: #003366;
+    color: #FFD700;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 2px;
+}
+
+#donation-section h2 {
+    color: yellow;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#donation-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color:white
+}
+
+/* Button Container */
+.donation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Donate Button */
+.donate-btn {
+    background-color: yellow;
+    color: #003366;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.donate-btn:hover {
+    background-color: #ffc107;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: transparent;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.learn-more-btn:hover {
+    background-color: yellow;
+    color: #003366;
+}
